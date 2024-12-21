@@ -18,7 +18,7 @@ app.set('views','views')
 
 app.use(controlerErr)
 
-app.use(express.urlencoded({extended:false}));
+app.use(express.urlencoded({ extended: true }));
 app.use(storeRouter)
 app.use(hostRouter)
 
